@@ -22,7 +22,7 @@ export default function Cast() {
             {cast && (
                 < ul > {cast.map(({ profile_path, name, character }) => (
     <li key={name}>
-                        <img src={`https://image.tmdb.org/t/p/original${profile_path}`} className={ style.image} />
+                        <img src={`https://image.tmdb.org/t/p/original${profile_path}`} className={style.image} alt={name}/>
         <p>{name}</p>
         <p>Character:{character}</p>
 

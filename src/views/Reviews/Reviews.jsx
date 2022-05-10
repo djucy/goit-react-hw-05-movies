@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import style from './Reviews.module.css';
+// import style from './Reviews.module.css';
 
 
 import * as Api from '../../service/api-fetch';

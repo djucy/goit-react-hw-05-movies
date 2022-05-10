@@ -56,9 +56,5 @@ export default function FilmList({ filmes,value }) {
 //   return <form onSubmit={handleSubmit}>{/* ... */}</form>;
 
 
-{/* <li id={id} key={ id}>
-            <img src={`https://image.tmdb.org/t/p/original${poster_path}`} alt={title} className={style.image}  />
-            <h2>{title}</h2>
-            </li> */}
 
             // <Film key={id} image={`https://image.tmdb.org/t/p/original${poster_path}`} title={title} alt={title} id={id} />

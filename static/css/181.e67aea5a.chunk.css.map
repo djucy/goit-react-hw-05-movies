@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/181.e67aea5a.chunk.css","mappings":"AAAA,4BACE,aAAc,CAEd,WAAY,CADZ,WAEF","sources":["components/MovieDetailes/MovieDetailes.module.css"],"sourcesContent":[".image {\n  display: block;\n  width: 200px;\n  height: auto;\n}\n"],"names":[],"sourceRoot":""}

@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import React, { lazy } from 'react';
- import { ToastContainer, toast } from 'react-toastify';
+ import { ToastContainer} from 'react-toastify';
 
 // import Cast from '../views/Cast/Cast';
 // import Reviews from '../views/Reviews/Reviews';

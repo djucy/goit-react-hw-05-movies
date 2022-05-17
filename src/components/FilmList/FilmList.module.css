@@ -3,7 +3,10 @@
   margin-left: auto;
   margin-right: auto;
   width: 200px;
-  height: auto;
+  height: 100%;
+  background-image: url(/public/white-male-1847732_640.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
   /* margin: 0; */
 }
 
@@ -12,8 +15,13 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
 }
+
 .item {
   text-decoration: none;
+}
+.item:hover {
+  transform: scale(1.2);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
 }
 .title {
   text-align: center;

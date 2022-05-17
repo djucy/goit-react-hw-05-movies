@@ -2,9 +2,9 @@
 const BASE_URL = "https://api.themoviedb.org/3";
 const API_KEY = "e32d0a5f8ee39ad2c612579abb31460d"
 
-export function fetchGetFilms() {
+export function fetchGetFilms(page) {
     return fetch(
-        `${BASE_URL}/trending/movie/day?api_key=${API_KEY}`)
+        `${BASE_URL}/trending/movie/day?api_key=${API_KEY}&page=${page}`)
         .then(response => {
             if (response.ok) {
                 return response.json();

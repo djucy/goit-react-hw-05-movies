@@ -27,7 +27,7 @@ export default function FilmList({ filmes,value }) {
     // }
                         
                     }} className={style.item } key={id}><li id={id} key={id}>
-                        <img src={!poster_path?"../../../public/white-male-1847732_640.jpg":`https://image.tmdb.org/t/p/original${poster_path}`} alt={title} className={style.image}  />
+                        <img src={!poster_path?"https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg":`https://image.tmdb.org/t/p/original${poster_path}`} alt={title} className={style.image}  />
                         <p className={ style.title}>{title}</p>
             </li></Link>
 

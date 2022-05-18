@@ -1,5 +1,25 @@
+.list {
+  margin-top: 20px;
+}
+
+.item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
 .image {
   display: block;
+  margin-bottom: 15px;
+
   width: 100px;
   height: 100px;
+}
+
+.textReview {
+  margin-left: 20px;
+  font-style: italic;
+}
+.authorName {
+  text-align: center;
+  font-weight: 600;
 }

@@ -1,5 +1,20 @@
+.article {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
 .image {
   display: block;
+  margin-right: 20px;
+
   width: 200px;
-  height: auto;
+  height: 300px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+}
+.description__text {
+  display: flex;
 }

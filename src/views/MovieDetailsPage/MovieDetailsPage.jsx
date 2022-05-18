@@ -1,7 +1,8 @@
 import {useState, useEffect } from 'react';
 import * as Api from '../../service/api-fetch';
 import MovieDetails from '../../components/MovieDetailes/MovieDetailes';
-import { NavLink, useParams,Outlet, useLocation, useNavigate } from 'react-router-dom';
+import { NavLink, useParams, Outlet, useLocation, useNavigate } from 'react-router-dom';
+import style from '../MovieDetailsPage/MovieDetailsPage.module.css'
 
 
 // import Cast from '../Cast/Cast';
@@ -38,14 +39,14 @@ export default function MovieDetailsPage() {
     
     return (
         <>
-            <h2>WoW</h2>
-           <button type="button" onClick={onBackPreviousPage}>Back</button>
+           
+            <button type="button" onClick={onBackPreviousPage} className={ style.button}>Back</button>
             {movie && <MovieDetails movie={movie}>
 
 
             </MovieDetails>}
-            <NavLink to={`/movies/${movieId}/cast`}>Cast </NavLink>
-            <NavLink to={`reviews`}>Reviews</NavLink> 
+            <NavLink to={`/movies/${movieId}/cast`} className={style.link }>Cast </NavLink>
+            <NavLink to={`reviews`} className={style.link }>Reviews</NavLink>
         <Outlet />
         </>
        

@@ -4,5 +4,6 @@
   margin-right: auto;
   margin-top: 20px;
   padding: 10px 15px;
-  border-radius: 15px;
+  border-radius: 5px;
+  background-color: transparent;
 }

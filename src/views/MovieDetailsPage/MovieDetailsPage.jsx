@@ -45,8 +45,8 @@ export default function MovieDetailsPage() {
 
 
             </MovieDetails>}
-            <NavLink to={`/movies/${movieId}/cast`} className={style.link }>Cast </NavLink>
-            <NavLink to={`reviews`} className={style.link }>Reviews</NavLink>
+            <NavLink to={`/movies/${movieId}/cast`} className={({isActive})=>isActive?style.linkActive:style.link }>Cast </NavLink>
+            <NavLink to={`reviews`} className={({isActive})=>isActive?style.linkActive:style.link }>Reviews</NavLink>
         <Outlet />
         </>
        

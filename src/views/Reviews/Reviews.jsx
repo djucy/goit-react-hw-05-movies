@@ -21,7 +21,7 @@ export default function Reviews() {
             {reviews && (
                 <ul className={style.list }>{reviews.map(({id,author,content,author_details}) => (
                     <li key={id} className={style.item }>
-                        <div><img className={style.image} src={`https://image.tmdb.org/t/p/w200${author_details.avatar_path}`}/>
+                        <div><img className={style.image} src={author_details.avatar_path?`https://image.tmdb.org/t/p/w200${author_details.avatar_path}`:"https://cdn.pixabay.com/photo/2020/03/17/11/31/movie-camera-4939841_960_720.png"}/>
                             <p className={ style.authorName}>{author}</p></div>
                         <p className={style.textReview }>{ content}</p>
                   </li>  

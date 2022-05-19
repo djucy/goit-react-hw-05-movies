@@ -10,3 +10,12 @@
   font-size: 25px;
   font-weight: 600;
 }
+
+.itemActive {
+  text-decoration: none;
+  color: rgb(233, 13, 13);
+  margin-right: 20px;
+  padding: 15px;
+  font-size: 25px;
+  font-weight: 600;
+}

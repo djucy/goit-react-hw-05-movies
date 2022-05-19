@@ -11,7 +11,7 @@ export default function MovieDetails({ movie }) {
          <>
          
             <article key={movie.id} className={style.article}>
-            <img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} alt={movie.title} className={style.image }></img>
+            <img src={movie.poster_path?`https://image.tmdb.org/t/p/original${movie.poster_path}`:"https://cdn.pixabay.com/photo/2021/11/27/18/14/charlie-chaplin-6828680_960_720.jpg"} alt={movie.title} className={style.image }></img>
                 <div className={style.description }>
                     <h2>{movie.title}</h2>
                     <p>Vote average:{ movie.vote_average}</p>

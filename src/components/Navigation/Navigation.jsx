@@ -6,8 +6,8 @@ export default function Navigation() {
 
     return (
         <nav className={style.nav }>
-            <NavLink to="/" className={style.item }>Home</NavLink>
-            <NavLink to="/movies" className={ style.item}>Movies</NavLink>
+            <NavLink to="/" className={({isActive})=>isActive?style.itemActive:style.item }>Home</NavLink>
+            <NavLink to="/movies" className={({isActive})=>isActive?style.itemActive:style.item }>Movies</NavLink>
             
         </nav>
 

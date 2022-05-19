@@ -10,7 +10,7 @@ export default function HomePage() {
     const [filmes, setFilmes] = useState([]);
     const [page, setPage] = useState(1)
     useEffect(() => {
-        return Api.fetchGetFilms(page,filmes)
+        return Api.fetchGetFilms(page)
             // .then(response => response.results)
             // .then(setFilmes)
             .then(newArrayFilmes => {

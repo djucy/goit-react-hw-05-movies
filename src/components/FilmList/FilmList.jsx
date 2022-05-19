@@ -1,10 +1,9 @@
 
-import { Link,  useNavigate,useLocation } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import style from './FilmList.module.css';
-// import Button from '../Button/Button';
-// import Film from '../Film/Film';
 
-export default function FilmList({ filmes,value }) {
+export default function FilmList({ filmes }) {
     const location = useLocation();
     let navigate = useNavigate();
     console.log(location);
@@ -34,14 +33,18 @@ export default function FilmList({ filmes,value }) {
         
 ))}
             </ul>
-            {/* {filmes.length===20 && <Button/>} */}
             </>
 
     )
 
 }
 
-
+FilmList.propTypes = {
+    filmes: PropTypes.array.isRequired,
+    poster_path: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    id:PropTypes.string.isRequired,
+}
 // import { useNavigate } from "react-router-dom";
 
 // function SignupForm() {
@@ -57,4 +60,4 @@ export default function FilmList({ filmes,value }) {
 
 
 
-            // <Film key={id} image={`https://image.tmdb.org/t/p/original${poster_path}`} title={title} alt={title} id={id} />
+   

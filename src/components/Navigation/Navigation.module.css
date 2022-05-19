@@ -10,6 +10,10 @@
   font-size: 25px;
   font-weight: 600;
 }
+.item:hover {
+  transform: scale(1.2);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+}
 
 .itemActive {
   text-decoration: none;
@@ -18,4 +22,8 @@
   padding: 15px;
   font-size: 25px;
   font-weight: 600;
+}
+.itemActive:hover {
+  transform: scale(1.2);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
 }

@@ -1,4 +1,7 @@
-import Navigation from '../Navigation/Navigation.jsx';
+// import Navigation from '../Navigation/Navigation.jsx';
+
+import { NavLink, Outlet } from "react-router-dom";
+import style from '../AppBar/AppBar.module.css';
 
 
 
@@ -6,11 +9,15 @@ import Navigation from '../Navigation/Navigation.jsx';
 
 export default function AppBar() {
     return (
-        <header >
-            <Navigation>
-
-            </Navigation>
-      </header>  
-
+       <> <header >
+            <nav className={style.nav }>
+            <NavLink to="/" className={({isActive})=>isActive?style.itemActive:style.item }>Home</NavLink>
+            <NavLink to="/movies" className={({isActive})=>isActive?style.itemActive:style.item }>Movies</NavLink>
+         
+            </nav>
+           
+        </header>
+            {/* <Outlet/> */}
+ </> 
     )
  }

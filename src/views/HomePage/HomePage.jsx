@@ -2,6 +2,7 @@ import { useState,useEffect } from 'react';
 import * as Api from '../../service/api-fetch.js';
 import FilmList from '../../components/FilmList/FilmList';
 import Button from 'components/Button/Button'
+import { Outlet } from 'react-router';
 
 
 
@@ -15,6 +16,7 @@ export default function HomePage() {
             // .then(setFilmes)
             .then(newArrayFilmes => {
                 setFilmes(state => [...state, ...newArrayFilmes]);
+                setPage(page);
             })
         
     }, [page]);
@@ -23,9 +25,10 @@ export default function HomePage() {
     }
    return (
       <>
-     
+     {/* <Outlet/> */}
            {filmes && <FilmList filmes={filmes} ></FilmList>} 
            <Button onLoadMore={downloadMoreFilmes}></Button>
+           
            </>
      )
  }

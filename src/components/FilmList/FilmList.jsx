@@ -41,9 +41,9 @@ export default function FilmList({ filmes }) {
 
 FilmList.propTypes = {
     filmes: PropTypes.array.isRequired,
-    poster_path: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    id:PropTypes.string.isRequired,
+    poster_path: PropTypes.string,
+    title: PropTypes.string,
+    id:PropTypes.string,
 }
 // import { useNavigate } from "react-router-dom";
 

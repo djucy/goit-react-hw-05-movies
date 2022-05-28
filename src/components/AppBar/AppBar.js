@@ -1,6 +1,6 @@
 // import Navigation from '../Navigation/Navigation.jsx';
 
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import style from '../AppBar/AppBar.module.css';
 
 
@@ -17,7 +17,7 @@ export default function AppBar() {
             </nav>
            
         </header>
-            {/* <Outlet/> */}
+           
  </> 
     )
  }

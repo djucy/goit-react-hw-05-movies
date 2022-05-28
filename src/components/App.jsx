@@ -1,10 +1,9 @@
-import { Route, Routes,BrowserRouter } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import React, { lazy,Suspense } from 'react';
  import { ToastContainer} from 'react-toastify';
 import AppBar from "./AppBar/AppBar";
 import Container from './Container/Container';
 import HomePage from '../views/HomePage/HomePage';
-// const HomePage = lazy(() => import('views/HomePage/HomePage'));
 const MoviesPage = lazy(() => import('views/MoviesPage/MoviesPage'));
 const MovieDetailsPage = lazy(() => import('../views/MovieDetailsPage/MovieDetailsPage.jsx'));
 const Cast = lazy(() => import('../views/Cast/Cast'));
@@ -37,24 +36,3 @@ export default function App(){
   );
 };
 
-// export default function App() {
-  // const [filmes, setFilmes] = useState([]);
-  //   return fetch(
-  //       'https://api.themoviedb.org/3/trending/movie/day?api_key=e32d0a5f8ee39ad2c612579abb31460d',)
-  //       .then(response => {
-  //           if (response.ok) {
-  //               return response.json();
-  //           }
-  //           return Promise.rejected(
-  //               new Error("Please, try again")
-  //           );
-  //       })
-  //     .then(response =>  {return [...response.results] })
-  //       // .then(filmes => setFilmes([...filmes]));
-  // .then(newArrayFilmes => {
-  //       setFilmes(state =>[...state, ...newArrayFilmes]);
-  //     })
-//   return (
-//     <HomePage></HomePage>
-//   )
-//  }

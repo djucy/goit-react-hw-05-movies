@@ -19,7 +19,7 @@ export default function MoviesPage() {
 
 
     useEffect(() => {
-        if (query === '') {
+        if (!query) {
             return;
         }
         setMovies([]);

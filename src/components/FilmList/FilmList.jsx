@@ -15,7 +15,7 @@ export default function FilmList({ filmes, value }) {
                 {filmes.map(({ id, poster_path, title }) => (
                     <Link to={`/movies/${id}`}
                         state={{
-                            from: location,
+                            from: console.log(location),
                         }}
 
 

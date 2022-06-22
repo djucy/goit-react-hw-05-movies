@@ -44,7 +44,7 @@ export default function MoviesPage() {
         <>
 
             <SearchMovieForm onSubmit={onSearchMovie}></SearchMovieForm>
-            {movies && <FilmList filmes={movies} value={query}></FilmList>}
+            {movies && <FilmList filmes={movies}></FilmList>}
             {movies.length === 20 && <Button onLoadMore={downloadMore} />}
         </>
     )
@@ -54,3 +54,4 @@ export default function MoviesPage() {
 
 
 }
+//  value={query}

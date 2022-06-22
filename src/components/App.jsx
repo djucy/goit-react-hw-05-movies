@@ -16,7 +16,6 @@ export default function App(){
     <AppBar />
     <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          {/* <Route path="/" element={<AppBar />}> */}
             <Route path="/" element={<HomePage />} /> 
             <Route path="/movies" element={<MoviesPage />} />
             <Route path="/movies/:movieId" element={<MovieDetailsPage />} >
@@ -24,12 +23,7 @@ export default function App(){
               <Route path="reviews" element={<Reviews />} /> 
             </Route>
             <Route path="*"  element={<NotFoundPage/> }></Route>
-        {/* </Route> */}
-        
-        
-        
         </Routes>
-   
       <ToastContainer />
     </Suspense>
      </Container>

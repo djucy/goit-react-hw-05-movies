@@ -13,11 +13,6 @@ export default function MoviesPage() {
     const [searchParams, setSearchParams] = useSearchParams();
     const query = searchParams.get('query');
 
-
-
-
-
-
     useEffect(() => {
         if (!query) {
             return;
@@ -26,7 +21,7 @@ export default function MoviesPage() {
         Api.fetchGetMovie(query, page)
             .then(newArrayMovies => {
                 setMovies(state => [...state, ...newArrayMovies]);
-                // setPage(page)
+            
             })
 
     }, [query, page])
@@ -42,7 +37,6 @@ export default function MoviesPage() {
 
     return (
         <>
-
             <SearchMovieForm onSubmit={onSearchMovie}></SearchMovieForm>
             {movies && <FilmList filmes={movies}></FilmList>}
             {movies.length === 20 && <Button onLoadMore={downloadMore} />}
@@ -54,4 +48,3 @@ export default function MoviesPage() {
 
 
 }
-//  value={query}

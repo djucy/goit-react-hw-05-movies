@@ -1,21 +1,14 @@
 import { useState } from 'react';
-// import { createBrowserHistory } from "history";
-import { toast } from 'react-toastify';
-// import {
 
-//     useLocation,
-// } from 'react-router-dom';
+import { toast } from 'react-toastify';
+
 import 'react-toastify/dist/ReactToastify.css';
 import PropTypes from 'prop-types';
 import style from 'components/SearchMovieForm/SearchMovieForm.module.css'
 
 export default function SearchMovieForm({ onSubmit }) {
     const [query, setQuery] = useState('');
-    // const history = createBrowserHistory();
-    // const location = useLocation();
-    // console.log(location);
-
-
+  
     const handleSubmit = (e) => {
         e.preventDefault();
         if (query.trim() === '') {
@@ -23,11 +16,9 @@ export default function SearchMovieForm({ onSubmit }) {
                 theme: 'colored',
             });
         }
-        // history.push({ ...location, search: `query=${query}` });
-
+     
         onSubmit(query);
         setQuery('');
-
     }
 
     const handleQueryChange = e => {

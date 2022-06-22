@@ -1,5 +1,6 @@
 
 import { useLocation, useNavigate } from 'react-router-dom';
+import s from '../../views/MovieDetailsPage/MovieDetailsPage.module.css';
 
 
 
@@ -12,8 +13,8 @@ export const BackButton = () => {
   };
 
   return (
-    <button type="button" onClick={onGoBack}>
-     
+      <button type="button" className={s.button } onClick={onGoBack}>
+     Back
     </button>
   );
 };
